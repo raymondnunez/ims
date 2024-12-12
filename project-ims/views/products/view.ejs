@@ -1,0 +1,35 @@
+<%- include('../partials/head', {title: 'Add New Product'}) %>
+<div>
+    <a href="/" class="btn btn-secondary"><i class="ri-arrow-left-line"></i> Back to List of Products</a>
+    <h1 class="h2 mt-3">Product Info</h1>
+    <div class="mb-3">
+        <label for="name" class="required">Product Name</label>
+        <input type="text" name="name" id="name" class="form-control-plaintext p-2" style="background: var(--bs-secondary-bg)" value="<%= product.name %>" readonly required>
+    </div>
+    <div class="mb-3">
+        <label for="category" class="required">Category</label>
+        <input type="text" name="category" id="category" class="form-control-plaintext p-2" style="background: var(--bs-secondary-bg)" readonly required>
+        <div class="invalid-feedback">
+            Please provide a category.
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="quantity" class="required">Quantity</label>
+        <input type="number" name="quantity" id="quantity" class="form-control-plaintext p-2" style="background: var(--bs-secondary-bg)" readonly required>
+        <div class="invalid-feedback">
+            Please provide a quantity.
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="price" class="required">Price</label>
+        <input type="text" name="price" id="price" class="form-control-plaintext p-2" style="background: var(--bs-secondary-bg)" readonly required>
+        <div class="invalid-feedback">
+            Please provide a price.
+        </div>
+    </div>
+    <div class="mb-3">
+        <label for="description" class="required">Description</label>
+        <textarea name="description" class="form-control-plaintext p-2" style="background: var(--bs-secondary-bg)" readonly rows="3" id="description"></textarea>
+    </div>
+</div>
+<%- include('../partials/foot') %>
