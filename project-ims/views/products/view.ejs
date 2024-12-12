@@ -8,28 +8,28 @@
     </div>
     <div class="mb-3">
         <label for="category" class="required">Category</label>
-        <input type="text" name="category" id="category" class="form-control-plaintext p-2" style="background: var(--bs-secondary-bg)" readonly required>
+        <input type="text" name="category" id="category" class="form-control-plaintext p-2" value="<%= product.category %>" style="background: var(--bs-secondary-bg)" readonly required>
         <div class="invalid-feedback">
             Please provide a category.
         </div>
     </div>
     <div class="mb-3">
         <label for="quantity" class="required">Quantity</label>
-        <input type="number" name="quantity" id="quantity" class="form-control-plaintext p-2" style="background: var(--bs-secondary-bg)" readonly required>
+        <input type="number" name="quantity" id="quantity" class="form-control-plaintext p-2" style="background: var(--bs-secondary-bg)" value="<%= product.quantity %>" readonly required>
         <div class="invalid-feedback">
             Please provide a quantity.
         </div>
     </div>
     <div class="mb-3">
         <label for="price" class="required">Price</label>
-        <input type="text" name="price" id="price" class="form-control-plaintext p-2" style="background: var(--bs-secondary-bg)" readonly required>
+        <input type="text" name="price" id="price" class="form-control-plaintext p-2" style="background: var(--bs-secondary-bg)" value="<%= product.price %>" readonly required>
         <div class="invalid-feedback">
             Please provide a price.
         </div>
     </div>
     <div class="mb-3">
         <label for="description" class="required">Description</label>
-        <textarea name="description" class="form-control-plaintext p-2" style="background: var(--bs-secondary-bg)" readonly rows="3" id="description"></textarea>
+        <textarea name="description" class="form-control-plaintext p-2" style="background: var(--bs-secondary-bg)" readonly rows="3" id="description"><%= product.description %></textarea>
     </div>
 </div>
 <%- include('../partials/foot') %>
